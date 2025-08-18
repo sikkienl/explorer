@@ -250,12 +250,16 @@ html
     block content
     div(class=footerClasses, role='navigation')
       .col-md-4.navbar-nav
-        if settings.display.facebook || settings.display.googleplus || settings.display.twitter || settings.display.youtube
+        if settings.display.facebook || settings.display.github || settings.display.googleplus || settings.display.twitter || settings.display.youtube
           ul.nav.justify-content-left
             if settings.display.facebook
               li.pull-left
                 a#facebook-icon.nav-link.social-link(href="https://www.facebook.com/"+settings.facebook, target='_blank')
                   span.glyphicon.fa.fa-facebook
+            if settings.display.github
+              li.pull-left
+                a#github-icon.nav-link.social-link(href="https://www.github.com/"+settings.github, target='_blank')
+                  span.glyphicon.fa.fa-github
             if settings.display.googleplus
               li.pull-left
                 a#googleplus-icon.nav-link.social-link(href="https://plus.google.com/"+settings.googleplus, target='_blank')

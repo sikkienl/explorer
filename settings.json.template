@@ -70,6 +70,7 @@
     "markets": true,
     "richlist": true,
     "facebook": false,
+    "github": false,
     "googleplus": false,
     "twitter": true,
     "youtube": false,
