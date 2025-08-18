@@ -1,4 +1,4 @@
-Iquidus Explorer - 1.7.4
+Iquidus Explorer - 1.7.5
 ================
 
 An open source block explorer written in node.js.
@@ -12,15 +12,61 @@ An open source block explorer written in node.js.
 
 ### Requires
 
-*  node.js >= 8.17.0 (12.14.0 is advised for updated dependencies)
-*  mongodb 4.2.x
+*  Node.js >= 12.14.0
+*  MongoDB >= 6
 *  *coind
 
-### Create database
+### install dependency
+```bash
+sudo apt update && sudo apt upgrade
+sudo apt-get install -y gnupg curl
+```
 
-Enter MongoDB cli:
+#### install Node
 
-    $ mongo
+Download and install nvm:
+
+    curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.3/install.sh | bash
+
+in lieu of restarting the shell:
+
+    \. "$HOME/.nvm/nvm.sh"
+
+Download and install Node.js:
+
+    nvm install 12
+
+Verify the Node.js version:
+
+    node -v # Should print "v12.22.2".
+
+Verify npm version:
+
+    npm -v # Should print "6.14.16".
+
+#### install MongoDB
+
+Import the public key:
+
+    curl -fsSL https://pgp.mongodb.com/server-6.0.asc | sudo gpg -o /usr/share/keyrings/mongodb-server-6.0.gpg --dearmor
+
+Create the list file:
+
+    echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-6.0.gpg ] http://repo.mongodb.com/apt/ubuntu focal/mongodb-enterprise/6.0 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-enterprise-6.0.list
+
+Reload the package database:
+
+    sudo apt-get update
+
+Install MongoDB:
+
+    sudo apt-get install -y mongodb-enterprise
+
+##### Database Setup
+
+Open the MongoDB cli:
+
+    $ mongosh
 
 Create databse:
 
@@ -28,15 +74,11 @@ Create databse:
 
 Create user with read/write access:
 
-    > db.createUser( { user: "iquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
+    > db.createUser( { user: "explorer", pwd: "jA^2!1799sus6&", roles: [ "readWrite" ] } )
 
-*Note: If you're using mongo shell 4.2.x, use the following to create your user:
+##### Download Source Code
 
-    > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
-
-### Get the source
-
-    git clone https://github.com/iquidus/explorer explorer
+    git clone https://github.com/sikkienl/explorer.git
 
 ### Install node modules
 
@@ -53,6 +95,10 @@ Create user with read/write access:
     npm start
 
 *Note: mongod must be running to start the explorer*
+
+### (Option) Start Explorer with pm2
+
+    pm2 start npm --name explorer -- start
 
 As of version 1.4.0 the explorer defaults to cluster mode, forking an instance of its process to each cpu core. This results in increased performance and stability. Load balancing gets automatically taken care of and any instances that for some reason die, will be restarted automatically. For testing/development (or if you just wish to) a single instance can be launched with
 
