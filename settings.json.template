@@ -69,9 +69,13 @@
     "api": true,
     "markets": true,
     "richlist": true,
+    "bitcointalk": false,
+    "discord": false,
     "facebook": false,
     "github": false,
     "googleplus": false,
+    "reddit": false,
+    "telegram": false,
     "twitter": true,
     "youtube": false,
     "search": true,
@@ -129,9 +133,14 @@
     "high_flag": 5000
   },
 
-  // facebook, googleplus, twitter, youtube
+  // bitcointalk, discord, facebook, github, googleplus, reddit, telegram, twitter, youtube
+  "bitcointalk": "yourbitcointalkpage",
+  "discord": "yourdiscordchannel",
   "facebook": "yourfacebookpage",
+  "github": "yourgithubpage",
   "googleplus": "yourgooglepluspage",
+  "reddit": "redditchannel",
+  "telegram": "telegramchannel",
   "twitter": "neobytesnetwork",
   "youtube": "youryoutubechannel",
 

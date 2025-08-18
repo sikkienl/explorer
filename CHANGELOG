@@ -92,7 +92,7 @@
 * Jasmine test scripts
 * getaddress api fix (address not found)
 * Base 2 rounding fix (values stored in satoshis)
-* DRK fixes
+* NBY fixes
 * New current supply setting: BALANCES
 * Sync fixes/optimizations
 * New setting: show_sent_received

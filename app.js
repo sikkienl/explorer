@@ -9,7 +9,6 @@ var express = require('express')
   , routes = require('./routes/index')
   , lib = require('./lib/explorer')
   , db = require('./lib/database')
-  , package_metadata = require('./package.json')
   , locale = require('./lib/locale')
   , request = require('request');
 
@@ -270,14 +269,18 @@ app.use('/ext/connections', function(req,res){
 
 // locals
 app.set('title', settings.title);
-app.set('iquidus_version', package_metadata.version);
 app.set('symbol', settings.symbol);
 app.set('coin', settings.coin);
 app.set('locale', locale);
 app.set('display', settings.display);
 app.set('markets', settings.markets);
-app.set('facebook', settings.facebook); 
+app.set('bitcointalk', settings.bitcointalk);
+app.set('discord', settings.discord);
+app.set('facebook', settings.facebook);
+app.set('github', settings.github);
 app.set('googleplus', settings.googleplus);
+app.set('reddit', settings.reddit);
+app.set('telegram', settings.telegram);
 app.set('twitter', settings.twitter);
 app.set('youtube', settings.youtube);
 app.set('genesis_block', settings.genesis_block);
