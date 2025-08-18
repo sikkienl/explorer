@@ -5,15 +5,15 @@
 */
 {
   // name your instance!
-  "title": "IQUIDUS",
+  "title": "Neobytes",
 
   "address": "127.0.0.1:3001",
 
   // coin name
-  "coin": "Darkcoin",
+  "coin": "Neobytes",
 
   // coin symbol
-  "symbol": "DRK",
+  "symbol": "NBY",
 
   // logo
   "logo": "/images/logo.png",
@@ -36,8 +36,8 @@
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "iquidus",
-    "password": "3xp!0reR",
+    "user": "explorer",
+    "password": "jA^2!1799sus6&",
     "database": "explorerdb",
     "address": "localhost",
     "port": 27017
@@ -53,8 +53,8 @@
 
   "wallet": {
     "host": "localhost",
-    "port": 9332,
-    "username": "darkcoinrpc",
+    "port": 1427,
+    "username": "neobytes_rpc",
     "password": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
   },
 
@@ -69,9 +69,9 @@
     "api": true,
     "markets": true,
     "richlist": true,
-    "twitter": true,
     "facebook": false,
     "googleplus": false,
+    "twitter": true,
     "youtube": false,
     "search": true,
     "movement": true,
@@ -96,16 +96,16 @@
   // ensure links on API page are valid
   "api": {
     "blockindex": 1337,
-    "blockhash": "1733320247b15ca2262be646397d1ffd6be953fa638ebb8f5dcbb4c2b91b34f1",
-    "txhash": "f270cd3813254c9922a2e222a56ba745842d9112223a1394062e460b33d27b7e",
-    "address": "RBiXWscC63Jdn1GfDtRj8hgv4Q6Zppvpwb"
+    "blockhash": "0000032389d369e9fe96107447eaf96b20df3149402447161b6446ba9261d988",
+    "txhash": "9f947961cb099546bbfdeadab6213d8ad37acf43398ead222f800c78e20d9e12",
+    "address": "NiUpbXFs2qf3dLh8VsebDEzzYsWSUV9eRR"
   },
 
   // market settings
   //included markets: altmarkets, fides, bittrex, poloniex, yobit, bleutrade
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "JBS",
+    "coin": "NBY",
     "exchange": "BTC",
     "enabled": ["bittrex"],
     "ccex_key" : "Get-Your-Own-Key",
@@ -128,15 +128,15 @@
     "high_flag": 5000
   },
 
-  // twitter, facebook, googleplus, youtube
-  "twitter": "iquidus",
+  // facebook, googleplus, twitter, youtube
   "facebook": "yourfacebookpage",
   "googleplus": "yourgooglepluspage",
+  "twitter": "neobytesnetwork",
   "youtube": "youryoutubechannel",
 
   //genesis
-  "genesis_tx": "65f705d2f385dc85763a317b3ec000063003d6b039546af5d8195a5ec27ae410",
-  "genesis_block": "b2926a56ca64e0cd2430347e383f63ad7092f406088b9b86d6d68c2a34baef51",
+  "genesis_tx": "efbdd1907c326a9758fa77569bd1a8b06cd4ed79398d632f1093497831a8fd1c",
+  "genesis_block": "00000d1519282d44743f57867bc2f94616e84c89445da2d320cf986ebec30a0c",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
@@ -174,7 +174,7 @@
   // type (optional) = class of label, valid types: default, primary, warning, danger, success
   // url (optional) = url to link to for more information
   "labels": {
-  //  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"http://example.com"},
+    "NhUMhorPCN3A9iRXwYNeev8FvWSm25EAqY": {"label": "Developers address", "type":"primary", "url":"https://neobytes.network"},
   //  "JSWVXHWeYNknPdG9uDrcBoZHztKMFCsndw": {"label": "Cryptsy"}
   }
 }
