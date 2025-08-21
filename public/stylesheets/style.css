@@ -144,6 +144,18 @@ tr {
 	margin-left:5px;
 }
 
+#bitcointalk-icon,
+#discord-icon,
+#facebook-icon,
+#github-icon,
+#googleplus-icon,
+#reddit-icon,
+#telegram-icon,
+#twitter-icon,
+#youtube-icon {
+	font-size: 20px;
+}
+
 .connections {
 	position: absolute;
 	bottom: 15px;
@@ -152,6 +164,19 @@ tr {
 
 #lblBlockcount {
 	margin-right: 10px;
+}
+
+#bitcointalk-icon img,
+#discord-icon img,
+#facebook-icon img,
+#github-icon img,
+#googleplus-icon img,
+#reddit-icon img img,
+#telegram-icon img,
+#twitter-icon img,
+#youtube-icon img {
+	width: 40px;
+	margin: 5px 5px;
 }
 
 #market_menu {
