@@ -24,7 +24,7 @@
     "pug": "^3.0.2",
     "qr-image": "~3.2.0",
     "request": "^2.88.2",
-    "static-favicon": "~1.0.2"
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "jasmine": "^5.1.0"
